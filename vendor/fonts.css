@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Inter';
+    src:
+        url('./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('woff2'),
+        url('./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('woff'),
+        url('./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('svg');
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src:
+        url('./fonts/Figtree/Figtree-VariableFont_wght.ttf') format('woff2'),
+        url('./fonts/Figtree/Figtree-VariableFont_wght.ttf') format('woff'),
+        url('./fonts/Figtree/Figtree-VariableFont_wght.ttf') format('svg');
+}
