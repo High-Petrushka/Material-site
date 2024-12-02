@@ -262,6 +262,10 @@ main {
     padding: 32px 48px 32px 32px;
 }
 
+.note-box:hover>.note-img img {
+    transform: translateY(-8px);
+}
+
 .note-img {
     width: 72px;
     height: 72px;
@@ -272,6 +276,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.note-img img {
+    transition: transform 0.2s;
 }
 
 .note-text {
@@ -314,9 +322,14 @@ main {
     gap: 20px;
 }
 
+.ui-info {
+    display: flex;
+    gap: 20px;
+}
+
 .interface-cont {
     width: 530px;
-    height: 720px;
+    height: 723px;
 
     border-radius: 40px;
 
@@ -331,4 +344,154 @@ main {
 
     object-fit: cover;
     border-radius: inherit;
+}
+
+.subject-cont {
+    display: flex;
+    flex-direction: column;
+    flex: 2 0 0px;
+    gap: 20px;
+}
+
+.above-sub {
+    min-width: 100%;
+    height: min-content;
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 48px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.below-sub {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.above-title {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.above-title h2 {
+    font-family: 'Figtree';
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.04em;
+    line-height: 1.1em;
+}
+
+.above-title p {
+    font-family: 'Figtree';
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.3em;
+}
+
+.above-text {
+    width: 70%;
+}
+
+.above-text p {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.subject-img {
+    width: 280px;
+    height: 280px;
+
+    transform: rotate(-45deg);
+
+    left: 82%;
+    bottom: 27%;
+
+    position: absolute;
+}
+
+.below-sub-box {
+    height: min-content;
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 48px;
+
+    display: flex;
+    flex: 1 0 0px;
+}
+
+.below-text {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.below-text h3 {
+    font-family: 'Figtree';
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.04em;
+    line-height: 1.2em;
+}
+
+.below-text p {
+    font-family: 'Figtree';
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.quest-info {
+    width: 100%;
+    height: min-content;
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quest-text {
+    display: flex;
+    align-items: center;
+}
+
+.quest-text h3 {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.01em;
+    line-height: 1.2em;
 }
