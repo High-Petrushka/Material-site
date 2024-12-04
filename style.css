@@ -90,7 +90,7 @@ header .wrapper {
 }
 
 main {
-    height: 100%;
+    height: min-content;
     width: 100%;
     padding-top: 35px;
 
@@ -592,4 +592,127 @@ main {
 
 .label.active img {
     transform: rotate(45deg);
+}
+
+footer {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 128px;
+    margin-bottom: 15px;
+}
+
+.footer-info {
+    width: 100%;
+    height: min-content;
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 24px 48px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.copyright-cont {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+.copyright-cont p {
+    font-family: 'Figtree';
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.04em;
+    line-height: 1.2em;
+}
+
+.copyright-cont img {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    left: 56%;
+    bottom: -3px;
+}
+
+.contacts-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    column-gap: 60px;
+    row-gap: 10px;
+}
+
+.contacts-cont .contact-box {
+    width: 40%;
+    height: min-content;
+}
+
+.contacts-cont .contact-box.social {
+    justify-self: end;
+}
+
+.contacts-cont h4 {
+    font-family: 'Figtree';
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.04em;
+    line-height: 1.2em;
+}
+
+.contacts-cont p {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.link-box {
+    width: min-content;
+
+    position: relative;
+}
+
+.contact-box a {
+    text-decoration: none;
+
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.contact-box a::before {
+    content: '';
+    position: absolute;
+
+    background-color: var(--font-color);
+    min-width: 0;
+    min-height: 3px;
+    border-radius: 5px;
+
+    bottom: 0;
+
+    transition: 0.3s;
+}
+
+.contact-box a:hover::before {
+    min-width: 100%;
 }
