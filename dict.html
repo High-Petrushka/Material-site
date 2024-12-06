@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matarial Site</title>
+    <link rel="stylesheet" href="./vendor/dict-style.css" type="text/css">
+    <link rel="icon" href="./images/icons/header_android_icon.png" type="image/x-icon">
+</head>
+
+<body class="dict-body">
+
+    <header>
+        <div class="wrapper">
+            <nav class="head-nav">
+                <div class="menu">
+                    <a href="./index.html" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Dict</a>
+                    <a href="#" class="nav-link">Examples</a>
+                    <a href="#" class="nav-link">Test</a>
+                </div>
+                <div class="menu" id="account">
+                    <img src="./images/icons/android_icon.svg" class="user-img" alt="user alternative">
+                    <a href="#" class="nav-link" id="account-btn">Account</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dict-main">
+        <section class="dict-title-sect">
+            <div class="wrapper">
+                <div class="dict-title">
+                    <h1>Dictionary</h1>
+                </div>
+            </div>
+        </section>
+        <section class="dict-sect">
+            <div class="wrapper">
+                <div class="dict">
+                    <div class="term-cont">
+                        <div class="term">
+                            <div class="search">
+                                <input type="text" class="dict-search" id="search" placeholder="Find term..."
+                                    autocomplete="off">
+                            </div>
+                            <div class="term-list">
+                                <div class="terms-title">
+                                    <h3>Terms:</h3>
+                                </div>
+                                <div class="terms-box" id="show"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="term-cont">
+                        <div class="explanation">
+                            <div class="terms-title">
+                                <h3>Explanation:</h3>
+                            </div>
+                            <div class="explain-area">
+                                <p id="explain"><b>Color role</b> - Like the "numbers" on a paint-by-number canvas,
+                                    color roles are assigned
+                                    to specific
+                                    UI elements. They have names like primary, on primary, and primary container. The
+                                    same color role is used for both light and dark themes.</p>
+                            </div>
+                            <img src="./images/cookie_img.svg" alt="cookie image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-info">
+                <div class="contacts-cont">
+                    <div class="contact-box">
+                        <h4>Material Design</h4>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <p>example@gmail.com</p>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <p>+1(211)880-2007</p>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-cont">
+                    <p>&copy; 2024 Meterial Design, Inc.</p>
+                    <img src="./images/icons/android_icon.svg" alt="android icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="./scripts/dictApp.js"></script>
+</body>
+
+</html>
