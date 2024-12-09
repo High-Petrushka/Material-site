@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Material Site</title>
+    <link rel="stylesheet" href="./vendor/example-style.css" type="text/css">
+    <link rel="icon" href="./images/icons/header_android_icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <nav class="head-nav">
+                <div class="menu">
+                    <a href="./index.html" class="nav-link">About</a>
+                    <a href="./dict.html" class="nav-link">Dict</a>
+                    <a href="#" class="nav-link">Examples</a>
+                    <a href="#" class="nav-link">Test</a>
+                </div>
+                <div class="menu" id="account">
+                    <img src="./images/icons/android_icon.svg" class="user-img" alt="user alternative">
+                    <a href="#" class="nav-link" id="account-btn">Account</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="example-main">
+        <section class="example-title-sect">
+            <div class="wrapper">
+                <div class="example-title">
+                    <h1>Examples</h1>
+                </div>
+            </div>
+        </section>
+        <section class="example-sect">
+            <div class="wrapper">
+                <div class="slider-cont">
+                    <div class="slider">
+                        <figure class="frame">
+                            <div class="img-box">
+                                <img src="./images/slider-frames/frame_1.png" alt="slider frame">
+                            </div>
+                            <figcaption><b>Fig. 1</b> - A sample news reading app, built with Jetpack Compose
+                            </figcaption>
+                        </figure>
+                        <figure class="frame">
+                            <div class="img-box">
+                                <img src="./images/slider-frames/frame_2.png" alt="slider frame">
+                            </div>
+                            <figcaption><b>Fig. 2</b> - Reply sample app using Material Design 3</figcaption>
+                        </figure>
+                        <figure class="frame">
+                            <div class="img-box">
+                                <img src="./images/slider-frames/frame_3.png" alt="slider frame">
+                            </div>
+                            <figcaption><b>Fig. 3</b> - A sample snack ordering app, showcases how to implement a custom
+                                design system</figcaption>
+                        </figure>
+                        <figure class="frame">
+                            <div class="img-box">
+                                <img src="./images/slider-frames/frame_4.png" alt="slider frame">
+                            </div>
+                            <figcaption><b>Fig. 4</b> - A fully functional Android app built entirely with Kotlin and
+                                Jetpack Compose</figcaption>
+                        </figure>
+                        <figure class="frame">
+                            <div class="img-box">
+                                <img src="./images/slider-frames/frame_5.png" alt="slider frame" id="reisze">
+                            </div>
+                            <figcaption><b>Fig. 5</b> - A sample of app widget using Material Design 3</figcaption>
+                        </figure>
+                    </div>
+                    <div class="switches">
+                        <div class="switch-box">
+                            <button class="switch" id="left">
+                                <img src="./images/icons/arrow_forward.svg" alt="switch arrow" id="invert-arrow">
+                                <p>Switch</p>
+                            </button>
+                        </div>
+                        <div class="switch-box">
+                            <button class="switch" id="right">
+                                <p>Switch</p>
+                                <img src="./images/icons/arrow_forward.svg" alt="switch arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="frame-counter">
+                    <div class="counter-text">
+                        <p>Slide</p>
+                    </div>
+                    <div class="counter-box">
+                        <p id="counter">1 / 5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-info">
+                <div class="contacts-cont">
+                    <div class="contact-box">
+                        <h4>Material Design</h4>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <p>example@gmail.com</p>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <p>+1(211)880-2007</p>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-cont">
+                    <p>&copy; 2024 Meterial Design, Inc.</p>
+                    <img src="./images/icons/android_icon.svg" alt="android icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./scripts/sliderApp.js"></script>
+</body>
+
+</html>

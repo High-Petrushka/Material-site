@@ -1,0 +1,211 @@
+@import url(./fonts.css);
+@import url(../style.css);
+
+.example-main {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.example-title-sect {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    justify-content: center;
+}
+
+.example-title {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    justify-content: center;
+}
+
+.example-title h1 {
+    font-family: 'Figtree';
+    font-size: 180px;
+    font-weight: 700;
+    color: var(--font-color);
+    letter-spacing: -0.03em;
+}
+
+.example-sect {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.slider-cont {
+    width: 100%;
+    height: min-content;
+
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 48px;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.slider {
+    width: 1000px;
+    height: min-content;
+
+    /*    border: 2px dashed #222; */
+    border-radius: 24px;
+
+    display: flex;
+    overflow: hidden;
+}
+
+.switches {
+    width: 100%;
+    height: min-content;
+    padding: 0 78px;
+
+    position: absolute;
+    bottom: 50%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch {
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 40px;
+    padding: 16px 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.switch:active {
+    transform: scale(0.9);
+}
+
+.switch p {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--btn-font);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+#invert-arrow {
+    transform: rotate(180deg);
+}
+
+.frame {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    transform: translateX(var(--slider-transf));
+    transition: transform 1.9s;
+}
+
+.img-box {
+    width: 1000px;
+    height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box img {
+    width: 90%;
+    height: 90%;
+
+    object-fit: fill;
+
+    border-radius: 24px;
+}
+
+#reisze {
+    width: 90%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.frame figcaption {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.frame b {
+    font-weight: 600;
+}
+
+.frame-counter {
+    width: 100%;
+    height: min-content;
+
+    background-color: var(--card-color);
+    padding: 48px;
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.counter-text p {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.counter-box {
+    width: 70px;
+    height: min-content;
+
+    background-color: var(--background);
+    padding: 5px 16px;
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-box p {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}

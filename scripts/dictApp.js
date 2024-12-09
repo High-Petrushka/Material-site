@@ -1,3 +1,4 @@
+// Хеш, содержащий термины и их определения
 const wordList = {
     'Color role':
         'Like the "numbers" on a paint-by-number canvas, color roles are assigned to specific UI elements. They have names like primary, on primary, and primary container. The same color role is used for both light and dark themes.',
@@ -25,40 +26,62 @@ const wordList = {
         'Opinionated breakpoint, the window size at which a layout needs to change to match available space, device conventions, and ergonomics.'
 };
 
+// Получаем элемент активного списка терминов
 const activeList = document.getElementById('show');
+
+// Получаем элемент поля поиска
 const termSeaech = document.getElementById('search');
+
+// Получаем элемент поля вывода объяснения
 const explanation = document.getElementById('explain');
 
+// Функция для компановки нового списка терминов
 function listMaker(obj) {
+    // Преобразуем пустой массив
     let newList = new Array();
 
+    // Проходимся по элементам переданного объекта
     for (i of obj) {
+        // Заполняем список элементами объекта
         newList.push(i);
     }
 
     return newList;
 }
 
+// Функция для постановки объяснения термина в указанное место
 function explain(terms, place) {
+    // Применяем ко всем элементами списка колбэк-функцию
     terms.forEach(item => {
+        // Добавляем обработчик события "нажатия" для каждого термина
         item.addEventListener('click', () => {
-            explanation.innerHTML = `<b>${item.innerText}</b> - ${wordList[item.innerText]}`;
+            // Подстявляем термин и его значение в указанное место
+            place.innerHTML = `<b>${item.innerText}</b> - ${wordList[item.innerText]}`;
         });
     });
 }
 
+// Создаём первичный реестр терминов, обратившись к именам ключей хеш-таблицы
 Object.keys(wordList).forEach(item => {
+    // Создаём новый элемент в HTML-разметке
     let newTerm = document.createElement('term');
+    // Заполняем ново-созданный элемент именем ключа (термином)
     newTerm.innerText = item;
+    // Добавляем элемент в поле вывода терминов
     activeList.appendChild(newTerm);
 });
 
+// Выводим пояснение к первому термину в ассоциативном-массиве (по-умолчанию)
 explain(listMaker(activeList.children), explanation);
 
+// Добавляем обработчик события ввода текста в поле поиска
 termSeaech.addEventListener('input', () => {
+    // Очищаем прежний список терминов
     activeList.innerHTML = '';
 
+    // Сопоставляем введённый текст с содержимым реестра терминов
     Object.keys(wordList).forEach(item => {
+        // При наличии совпадений, добавляем элемент в новый список
         if (item.toLowerCase().includes(termSeaech.value.toLowerCase())) {
             let newTerm = document.createElement('term');
             newTerm.innerText = item;
@@ -66,6 +89,7 @@ termSeaech.addEventListener('input', () => {
         }
     });
 
+    // Добавляем возможность вывода значений терминов
     let terms = listMaker(activeList.children);
     explain(terms, explanation);
 });

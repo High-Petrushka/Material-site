@@ -6,14 +6,6 @@
     position: relative;
 }
 
-/* 
-footer {
-    position: absolute;
-    bottom: 0;
-
-    padding-top: 0;
-} */
-
 .dict-main {
     width: 100%;
     height: min-content;
