@@ -66,8 +66,11 @@
 }
 
 .question {
-    width: 85%;
+    width: 100%;
     height: min-content;
+
+    display: flex;
+    gap: 20px;
 }
 
 .question h4 {
@@ -77,6 +80,8 @@
     color: var(--font-color);
     letter-spacing: -0.04em;
     line-height: 1.2em;
+
+    width: 85%;
 }
 
 .answ-box {
@@ -88,6 +93,18 @@
     gap: 20px;
 
     padding: 20px 0 0 0;
+}
+
+.test-answ {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 20px 0 0 20px;
 }
 
 .answ-box input {
@@ -108,6 +125,32 @@
     line-height: 1.6em;
 }
 
+.answer {
+    width: 60%;
+    height: min-content;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.test-answ input {
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+    accent-color: var(--font-color);
+}
+
+.test-answ p {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: min-content;
+}
+
 .right-check {
     width: 32px;
     height: 32px;
@@ -119,15 +162,18 @@
 .wrong-check {
     width: 32px;
     height: 32px;
+
+    opacity: 0;
+    display: none;
 }
 
 .right-answ-box {
-    height: min-content;
+    height: 0;
 
     display: flex;
     justify-content: space-between;
 
-    padding: 20px 0 0 0;
+    padding: 0 0 0 0;
     overflow: hidden;
 }
 
@@ -141,6 +187,75 @@
 }
 
 .right-answ-box p {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.result-sect {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    justify-content: center;
+}
+
+.result-cont {
+    width: 100%;
+    height: min-content;
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-btn {
+    width: min-content;
+
+    background-color: var(--btn-color);
+    border-radius: 40px;
+    padding: 16px 32px;
+
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--btn-font);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+
+    transition: transform 0.3s;
+}
+
+.result-btn:active {
+    transform: scale(0.9);
+}
+
+.result-title h4 {
+    font-family: 'Figtree';
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.5em;
+}
+
+.points p {
     font-family: 'Figtree';
     font-size: 18px;
     font-weight: 400;
