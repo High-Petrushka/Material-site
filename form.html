@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Material Site</title>
+    <link rel="stylesheet" href="./vendor/form-style.css" type="text/css">
+    <link rel="icon" href="./images/icons/header_android_icon.png">
+</head>
+
+<body>
+
+    <section class="popup-sect">
+        <div class="wrapper">
+            <div class="popup-cont">
+                <div class="form-box">
+                    <form class="login-form" id="login">
+                        <div class="login-box">
+                            <h3>Account Log In</h3>
+                        </div>
+                        <div class="login-box">
+                            <div class="input-box">
+                                <h6>Name</h6>
+                                <input type="text" name="name" class="login-inp" placeholder="Your name..."
+                                    autocomplete="off" minlength="4" maxlength="10"
+                                    pattern="([а-яА-ЯёЁ]|[0-9])+[а-яА-ЯёЁ]\s?(([а-яА-ЯёЁ]|[0-9]|)+)?" required>
+                            </div>
+                            <div class="input-box">
+                                <h6>Birth Day</h6>
+                                <input type="date" name="birth" class="login-inp" min="1950-01-01" max="2024-12-14"
+                                    required>
+                            </div>
+                            <div class="input-box">
+                                <h6>Gender</h6>
+                                <div class="gender-box">
+                                    <input type="radio" name="gender" class="gender-inp" value="Male" checked>
+                                    <input type="radio" name="gender" class="gender-inp" value="Female">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-box">
+                            <input type="submit" class="login-btn" id="login-btn" value="continue">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./scripts/formApp.js"></script>
+</body>
+
+</html>
