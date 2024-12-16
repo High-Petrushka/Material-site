@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Material Site</title>
+    <link rel="stylesheet" href="./vendor/account-style.css" type="text/css">
+    <link rel="icon" href="./images/icons/header_android_icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <nav class="head-nav">
+                <div class="menu">
+                    <a href="./about.html" class="nav-link">About</a>
+                    <a href="./dict.html" class="nav-link">Dict</a>
+                    <a href="./example.html" class="nav-link">Examples</a>
+                    <a href="./test.html" class="nav-link">Test</a>
+                </div>
+                <div class="menu" id="account">
+                    <!--  <img src="./images/icons/android_icon.svg" class="user-img" alt="user alternative"> -->
+                    <a href="./account.html" class="nav-link nav-reverse" id="account-btn">Account</a>
+                    <a href="#" class="nav-link" id="logout-btn">LogOut</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="account-main">
+        <section class="account-title-sect">
+            <div class="wrapper">
+                <div class="account-title">
+                    <h1>Account</h1>
+                </div>
+            </div>
+        </section>
+        <section class="user-info-sect">
+            <div class="wrapper">
+                <div class="user-info">
+                    <div class="info-box">
+                        <div class="account-img">
+                            <img src="./images/account-icons/login_icon.svg" alt="user icon">
+                        </div>
+                        <div class="account-text">
+                            <h3>Login</h3>
+                            <p id="nickname">User</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="account-img">
+                            <img src="./images/account-icons/birthday_icon.svg" alt="birthday icon">
+                        </div>
+                        <div class="account-text">
+                            <h3>Birthday</h3>
+                            <p id="birth">xx-xx-xxxx</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="account-img">
+                            <img src="./images/account-icons/gender_icon.svg" alt="gender icon">
+                        </div>
+                        <div class="account-text">
+                            <h3>Gender</h3>
+                            <p id="gender">Unknown</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="other-info">
+                    <div class="test-info">
+                        <div class="test-info-title">
+                            <h3>Last test result:</h3>
+                        </div>
+                        <div class="test-info-text">
+                            <p id="test-res">0 / 6</p>
+                        </div>
+                    </div>
+                    <div class="logout-box">
+                        <button class="logout-btn" id="exit-btn">LogOut</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-info">
+                <div class="contacts-cont">
+                    <div class="contact-box">
+                        <h4>Material Design</h4>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <p>example@gmail.com</p>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="contact-box">
+                        <p>+1(211)880-2007</p>
+                    </div>
+                    <div class="contact-box social">
+                        <div class="link-box">
+                            <a href="#">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-cont">
+                    <p>&copy; 2024 Meterial Design, Inc.</p>
+                    <img src="./images/icons/android_icon.svg" alt="android icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./scripts/accountApp.js"></script>
+</body>
+
+</html>

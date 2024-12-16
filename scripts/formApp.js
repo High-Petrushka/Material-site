@@ -35,7 +35,6 @@ logInBtn.addEventListener('click', (event) => {
     const gender = logInForm.elements.gender;
 
     if (userName.validity.valid) {
-        console.log('Name is valid');
         enter++
     } else {
         let nameValue = userName.value;
@@ -50,7 +49,6 @@ logInBtn.addEventListener('click', (event) => {
     }
 
     if (birthDay.validity.valid) {
-        console.log('Date is valid');
         enter++;
     } else {
         let year = birthDay.value.slice(0, 4);
@@ -65,11 +63,18 @@ logInBtn.addEventListener('click', (event) => {
     }
 
     if (enter === 2) {
-        console.log(userName.value);
-        console.log(birthDay.value);
-        console.log(gender.value);
+
+        if (sessionStorage.length > 0) {
+            sessionStorage.clear();
+        }
+
+        sessionStorage.setItem('userLogin', userName.value);
+        sessionStorage.setItem('userBirth', birthDay.value);
+        sessionStorage.setItem('userGender', gender.value);
 
         logInForm.reset();
+
+        window.location.replace('./about.html')
     }
 });
 

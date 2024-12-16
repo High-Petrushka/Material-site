@@ -1,0 +1,199 @@
+@import url(./fonts.css);
+@import url(../style.css);
+
+.account-title-sect {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.account-title {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    justify-content: center;
+}
+
+.account-title h1 {
+    font-family: 'Figtree';
+    font-size: 180px;
+    font-weight: 700;
+    color: var(--font-color);
+    letter-spacing: -0.03em;
+}
+
+.user-info-sect {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-info {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    gap: 20px;
+}
+
+.info-box {
+    display: flex;
+    flex: 1 0 0px;
+    gap: 20px;
+
+    width: 1px;
+    height: min-content;
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 32px 48px 32px 32px;
+}
+
+.info-box:hover>.account-img img {
+    transform: translateY(-8px);
+}
+
+.account-img {
+    width: 72px;
+    height: 72px;
+
+    background-color: var(--background);
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-img img {
+    width: 48px;
+    height: 48px;
+
+    transition: 0.2s;
+}
+
+.account-text {
+    width: 1px;
+    height: min-content;
+
+    display: flex;
+    flex: 1 0 0px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.account-text h3 {
+    font-family: 'Figtree';
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.account-text p {
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+#nickname {
+    font-family: 'Inter';
+}
+
+.test-info-sect {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    justify-content: center;
+}
+
+.other-info {
+    width: 100%;
+    height: min-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.test-info {
+    display: flex;
+    flex: 2 0 0px;
+    justify-content: space-between;
+
+    width: 1px;
+    height: min-content;
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 43px;
+}
+
+.logout-box {
+    display: flex;
+    flex: 1 0 0px;
+
+    width: 1px;
+    height: min-content;
+
+    background-color: var(--card-color);
+    border-radius: 40px;
+    padding: 32px;
+}
+
+.test-info-title h3 {
+    font-family: 'Figtree';
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--font-color);
+    letter-spacing: -0.04em;
+    line-height: 1.2em;
+}
+
+.test-info-text p {
+    font-family: 'Figtree';
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--font-color);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+}
+
+.logout-btn {
+    background-color: var(--btn-color);
+    border-radius: 40px;
+    padding: 16px 32px;
+
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Figtree';
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--btn-font);
+    letter-spacing: -0.02em;
+    line-height: 1.6em;
+
+    transition: 0.3s;
+}
+
+.logout-btn:active {
+    transform: scale(0.9);
+}

@@ -12,6 +12,9 @@ const leftBtn = document.getElementById('left');
 // Получаем поле, содержащее порядковые номера слайдов
 const frameCounter = document.getElementById('counter');
 
+const logOutBtn = document.getElementById('logout-btn');
+const accountBtn = document.getElementById('account-btn');
+
 
 // Добавляем кнопкам логику событий срабатывания
 /*
@@ -44,4 +47,12 @@ leftBtn.addEventListener('click', () => {
         // Обновляем содержимое счётчика
         frameCounter.innerText = `${order + 1} / 5`;
     }
+});
+
+accountBtn.innerText = `${sessionStorage.getItem('userLogin')}`;
+
+logOutBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    window.location.replace('./index.html');
 });

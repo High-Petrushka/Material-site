@@ -35,6 +35,9 @@ const termSeaech = document.getElementById('search');
 // Получаем элемент поля вывода объяснения
 const explanation = document.getElementById('explain');
 
+const logOutBtn = document.getElementById('logout-btn');
+const accountBtn = document.getElementById('account-btn');
+
 // Функция для компановки нового списка терминов
 function listMaker(obj) {
     // Преобразуем пустой массив
@@ -94,3 +97,10 @@ termSeaech.addEventListener('input', () => {
     explain(terms, explanation);
 });
 
+accountBtn.innerText = `${sessionStorage.getItem('userLogin')}`;
+
+logOutBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    window.location.replace('./index.html');
+});

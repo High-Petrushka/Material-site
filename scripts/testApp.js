@@ -15,6 +15,9 @@ const wronCheck = document.getElementsByClassName('wrong-check');
 
 const shield = document.getElementById('protector');
 
+const logOutBtn = document.getElementById('logout-btn');
+const accountBtn = document.getElementById('account-btn');
+
 function collectWrite(forms) {
     let points = 0;
     let rightInd = new Array;
@@ -111,6 +114,8 @@ resultBtn.addEventListener('click', () => {
 
     totalResult = userWrite[0] + userTest[0];
     output.innerText = `${totalResult} / 6`;
+
+    sessionStorage.setItem('testResult', `${totalResult} / 6`);
 });
 
 repeatBtn.addEventListener('click', () => {
@@ -126,5 +131,15 @@ repeatBtn.addEventListener('click', () => {
     hideAnswer(rightAnsw);
     shield.style['z-index'] = -1;
 
-    output.innerText = `0 / 6`
+    output.innerText = `0 / 6`;
+
+    sessionStorage.removeItem('testResult');
+});
+
+accountBtn.innerText = `${sessionStorage.getItem('userLogin')}`;
+
+logOutBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    window.location.replace('./index.html');
 });

@@ -57,7 +57,6 @@ header .wrapper {
 }
 
 .menu {
-    width: min-content;
     height: min-content;
 
     display: flex;
@@ -86,9 +85,18 @@ header .wrapper {
     transition: 0.3s;
 }
 
+.nav-reverse {
+    background-color: var(--font-color);
+    color: var(--btn-font);
+}
+
 .nav-link:hover {
     background-color: var(--font-color);
     color: var(--btn-font);
+}
+
+#account-btn {
+    font-family: 'Inter';
 }
 
 #account:hover .user-img {

@@ -1,6 +1,9 @@
 // Плучаем перечень всех элементов с классом 'label'
 const accordion = document.getElementsByClassName('label');
 
+const logOutBtn = document.getElementById('logout-btn');
+const accountBtn = document.getElementById('account-btn');
+
 // Отлавливаем нажатия на первый элемент из реестра
 accordion[0].addEventListener('click', () => {
     // Добавляем или убираем класс 'active'
@@ -25,4 +28,12 @@ accordion[2].addEventListener('click', () => {
 
 accordion[3].addEventListener('click', () => {
     accordion[3].classList.toggle('active');
+});
+
+accountBtn.innerText = `${sessionStorage.getItem('userLogin')}`;
+
+logOutBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    window.location.replace('./index.html');
 });
